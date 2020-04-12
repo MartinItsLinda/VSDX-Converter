@@ -37,7 +37,7 @@ public class vsdxBatchConvert {
      * Batch converts .vsdx files in the specified folder
      */
     public static void execute(File folder) throws IOException {
-        System.out.println(folder);
+//        System.out.println(folder);
 
         try (Stream<Path> filePathStream = Files.walk(folder.toPath())) {
             filePathStream.forEach(filePath ->

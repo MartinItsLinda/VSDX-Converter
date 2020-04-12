@@ -30,7 +30,7 @@ public class Main {
             final File file = new File(UUID.randomUUID().toString() + ".vsdx");
             final File converted = new File(StringUtils.substringBefore(file.getPath(), ".") + ".xml");
 
-            System.out.println(String.format("File created at: %s, writing contents", file.getPath()));
+            System.out.println(String.format("File created as: %s, writing contents", file.getPath()));
             try (final BufferedOutputStream out = new BufferedOutputStream(new FileOutputStream(file))) {
 
                 out.write(req.bodyAsBytes());
